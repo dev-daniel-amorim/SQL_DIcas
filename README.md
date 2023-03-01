@@ -19,9 +19,11 @@ EX 1: Converter um valor TEXTO em dados datetime:
     -- SELECT CONVERT(datetime, '2017-08-25');
     
 ## Tratalhando com datas
-Pegando data e hora do sistema
+Pegando data/hora do sistema
 
-    select GETDATE()
+    select GETDATE() -- DATA E HORA COMPLETA
+    SELECT DATEPART(DW, GETDATE()) -- DIA DA SEMANA 1, 2, 3..
+    SELECT DATENAME(DW, GETDATE()) -- DIA DA SEMANA 'SEGUNDA', 'TERÇA'...
 
 ## Cláusula EXISTS
 O exists verifica se existe algum resultado para a subquery informada, caso TRUE irá executar a query principal que está solicitando a verificação, caso FALSE a query não será executada. Exemplo:
