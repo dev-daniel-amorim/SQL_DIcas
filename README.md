@@ -29,6 +29,12 @@ Adicionando 2 dias ou 2 meses ou 2 anos a uma data de uma tabela compras
 
     UPDATE compras as c
     SET c.DATA = DATEADD(D,M,Y? valor_do_incremento, c.DATA) 
+    
+Na tabela VENDAS, separand a data da coluna DATA em outras colunas de MES e ANO
+
+    SELECT MONTH(DATA) AS MES, YEAR(DATA) AS ANO
+    FROM VENDAS
+
 
 ## Cláusula EXISTS
 O exists verifica se existe algum resultado para a subquery informada, caso TRUE irá executar a query principal que está solicitando a verificação, caso FALSE a query não será executada. Exemplo:
