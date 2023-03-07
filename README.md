@@ -46,3 +46,8 @@ O exists verifica se existe algum resultado para a subquery informada, caso TRUE
                 WHERE BOLA = 1)
                 
 No exemplo acima fazemos uma analogia a um jogo onde pedimos para selecionar todos JOGADORES da PARTIDA mas só se EXISTIR na tabela JOGO uma bola igual a 1, caso exista os jogadores serão selecionados, caso contrario nenhum jogador sera selecionado.
+
+## OPERADORES
+
+    IS NULL : Retorna se a consulta é nula
+    IS NOT NULL: Retona se a consulta não é nule
