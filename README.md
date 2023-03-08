@@ -1,4 +1,4 @@
-# SQL dicas (Minhas anotações SQL)
+# SQL - Guia rápido
 
 ## Conversão de dados com CAST
 CAST converte dados de qualquer tipo para um tipo de dados especificado;
